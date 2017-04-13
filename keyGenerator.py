@@ -46,37 +46,21 @@ def keyGen():
         else:
             print("\nYou didn't choose '1' or '2'.")
     print("\nKey generated successfully! Now, please go back to the old",\
-          "instructions\nwith 1, 2, 3, and 4.")
+          "instructions\nwith 1 and 2.)
     
 def main():
     #ui
     print("Welcome to Kyle's random string generator!")
-    print("\nPress '1' to generate a key, press '2' to view information",\
-          "about the generator\nalgorithm, press '3' to view information",\
-          "about the generated keys, or press '4'\nto exit.")
+    print("\nPress '1' to generate a key or press '2' to exit.")
     choice = input("\nWhat'll it be, chief? ")
-    while choice != '4':
+    while choice != '2':
         if choice == '1':
             #calls keygen
             keyGen()
             choice = input("\nWhat's next, boss? ")
-        elif choice == '2':
-            #prints from text file
-            file = open("aboutAlgorithm.txt", 'r')
-            for line in file:
-                print(line.rstrip("\n"))
-            file.close()
-            choice = input("\nWhat's next, cap? ")
-        elif choice == '3':
-            #prints from other text file
-            file = open("aboutKeys.txt", 'r')
-            for line in file:
-                print(line.rstrip("\n"))
-            file.close()
-            choice = input("\nWhat's next, my dude? ")
         else:
             #not necessary but its good practice to check input
-            print("\nOnly type '1', '2', '3', or '4' - refer to instructions if",\
+            print("\nOnly type '1' or '2' - refer to instructions if",\
                   "you're confused.")
             choice = input("\nWhat do you want to do, brotherman? ")
     #program exits
