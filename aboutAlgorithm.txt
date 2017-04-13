@@ -1,4 +1,0 @@
-In this program, I created random strings; three groups of five characters
-separated by hyphens after the first two groups end. I had two algorithms;
-one of them made all of the 15 generated characters random, and the other
-made most of them random, but ensured that some of them would be 
